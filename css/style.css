@@ -1,76 +1,72 @@
+/* Fuente y estructura base */
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
     margin: 0;
     padding: 0;
 }
-.titulo {
-    color: greenyellow;
-    background-color: green;
-    font-size: 60px;
-    border: 3px solid black;
-    border-radius: 50px;
-    padding: 20px 50px;
-    margin: 40px auto 10px;
+
+/* Encabezado */
+.encabezado {
+    background-color:  #ebebe7 ;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 200px;
-    width: fit-content;
+    gap: 70px;
+    padding: 30px 50px;
 }
 
-.titulo .plantaencabezado {
-    width: 250px;
-    height: auto;
-}
-.titulo2 {
-    color: black;
-    background-color: bisque;
-    display: inline-block;
-    padding: 10px 30px;
-    margin-bottom: 20px;
-    border-radius: 20px;
-}
-
-/* Contenedores de imagen y texto */
-.contenedor {
-    border: 5px solid black;
-    padding: 20px;
-    margin: 20px auto;
-    width: 80%;
-    display: flex;
-    align-items: flex-start;
-    gap: 30px;
+.logo-texto {
     text-align: left;
 }
 
-/* Imagen a la izquierda */
-.contenedor img {
-    border: 1px solid black;
-    width: 300px;
-    height: auto;
-}
-
-/* Texto a la derecha */
-.texto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.texto h2 {
-    margin: 0 0 10px 0;
-    font-size: 24px;
-}
-
-.texto p {
+.logo-texto h1 {
+    font-size: 36px;
     margin: 0;
+}
+
+.logo-texto h1 strong {
+    font-weight: bold;
+}
+
+.logo-texto p {
+    margin: 5px 0 0;
     font-size: 16px;
 }
 
-/* Informacion adicional puede ser derechos de autor, firmas, mapa, avisos legasles etc */
+.planta-encabezado {
+    width: 190px;
+    height: auto;
+}
+
+/* Sección principal */
+main {
+    padding: 30px;
+}
+
+/* Cada producto */
+.producto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    gap: 30px;
+}
+
+.producto img {
+    width: 250px;
+    height: auto;
+}
+
+.descripcion {
+    text-align: left;
+    font-size: 16px;
+}
+
+/* Pie de página */
 footer {
-    background-color: aquamarine;
-    padding: 10px;
-    margin-top: 20px;
+    background-color: #b55a12;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
 }
